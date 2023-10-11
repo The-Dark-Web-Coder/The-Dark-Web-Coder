@@ -1,0 +1,15 @@
+1) Open https://popcat.click
+2) Open the soure code (Alt-Right click then click inspect)
+3) Click on console and enter the code below for it to work.
+
+
+var event = new KeyboardEvent('keydown', {
+	key: 'g',
+	ctrlKey: true
+});
+
+setInterval(function(){
+	for (i = 0; i < 100; i++) {
+		document.dispatchEvent(event);
+	}
+}, 0);
